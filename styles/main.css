@@ -1,0 +1,92 @@
+#weatherPanel {
+	background-color: #4EB543;
+	border: 5px solid green;
+	border-radius: 10px;
+	box-shadow: 0px 4px 15px #3B3B3B;
+	color: white;
+	font-family: 'Baloo Bhaina', cursive;
+	max-width: 600px;
+	padding-bottom: 15px;
+	text-align: center;
+}
+
+#mainIcon {
+	font-size: 4em;
+	margin-top: 16px;
+}
+
+#location {
+	font-size: 1.1em;
+	margin-top: 12px;
+}
+
+#conditions {
+	display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		flex-direction: column;
+	font-size: 1.5em;
+	padding-top: 10px;
+}
+
+#conditions .wi {
+	width: 1em;
+}
+
+#humidity {
+	padding: 8px 0px;
+}
+
+#forecast {
+	font-family: 'Assistant', sans-serif;
+	padding: 15px 10px;
+}
+
+.glyphicon {
+	font-size: 2em;
+	transform: translateY(14px);
+}
+
+.btn {
+  background-color: #FAE712;
+  background-image: linear-gradient(#FAE712, #CCC200);
+	border: 2px solid #8C871F;
+	border-radius: 50% 10px;
+	color: #755514;
+  font-size: 1.5em;
+  padding: 8px 20px;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	background-color: black;
+	background-image:
+		radial-gradient(white, hsla(0, 100%, 100%, .25) 2px, transparent 30px),
+		radial-gradient(white, hsla(0, 100%, 100%, .15) 4px, transparent 25px),
+		radial-gradient(white, hsla(0, 100%, 100%, .10) 2px, transparent 30px),
+		radial-gradient(red, hsla(0, 60%, 90%, .2) 1px, transparent 25px),
+		radial-gradient(blue, hsla(240, 60%, 90%, .2) 1px, transparent 15px);
+	background-position: 20px 10px, 30px 25px, 0px 5px, 0px 0px, 0px 5px;
+	background-size: 800px 800px, 400px 280px, 200px 200px, 1200px 800px, 600px 400px;
+	height: 100%;
+}
+
+main {
+	display: flex;
+		justify-content: center;
+		align-items: center;
+	height: 100%;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+@media only screen and (max-width: 600px) {
+	#weatherPanel {
+		width: 100%;
+	}
+}
